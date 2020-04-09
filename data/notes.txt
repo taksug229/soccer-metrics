@@ -8,8 +8,8 @@ Div = League Division
 Date = Match Date (yy/mm/dd)
 HomeTeam = Home Team
 AwayTeam = Away Team
-FTHG and HG = Full Time Home Team Goals
-FTAG and AG = Full Time Away Team Goals
+FTHG = Full Time Home Team Goals
+FTAG = Full Time Away Team Goals
 FTR = Full Time Result (H=Home Win, D=Draw, A=Away Win)
 HTHG = Half Time Home Team Goals
 HTAG = Half Time Away Team Goals
@@ -69,7 +69,37 @@ SJA = Stan James away win odds
 SYH = Stanleybet home win odds
 SYD = Stanleybet draw odds
 SYA = Stanleybet away win odds
-VCH = VC Bet home win odds
+VCH = VC Bet home win odds000............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 VCD = VC Bet draw odds
 VCA = VC Bet away win odds
 WHH = William Hill home win odds
