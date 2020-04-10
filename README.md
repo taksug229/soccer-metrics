@@ -1,6 +1,6 @@
 # What metrics matter in Soccer?
 
-<PHOTO of soccer>
+![Stadium](img/title-stadium.jpg)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -22,7 +22,7 @@
     * [Take Away & Final Thoughts](#take-away-&-final-thoughts)
     * [Future works](#future-works)
 - [Built with](#built-with)
--  [Author](#author)
+- [Author](#author)
 
 ---
 
@@ -33,7 +33,7 @@ Soccer is the most popular sport in the world with about [3.5 billion fans](http
 
 I’ve been a fan of soccer for about 20 years so I was interested in knowing more about the sport. I gathered stats from the last 10 years from soccer leagues in England, Spain, Germany and Italy. I chose these 4 leagues because they were the only countries that had an UEFA Champions League champion in the last 10 years. The UEFA Champions League is considered the most competitive competition in the world so I made sure I was to taking stats from the best leagues. 
 
-<PHOTO of CL winners>
+![CL Winners](img/CL-winners.png)
 
 ### Data
 I used datasets that were available from a betting [site](http://www.football-data.co.uk/) in the UK.
@@ -64,39 +64,49 @@ I wanted to find out which metrics contribute to wins. There were 26 different m
 - Yellow cards committed by opponent
 - Red cards committed by opponent
 
-<PHOTO of Scatter Matrix>
+![Scatter Matrix](img/scatter.png)
 
 
 ### What metrics matter?
 I quantified each metric’s correlations with wins using Pearson’s correlation method. I found there were 6 metrics with positive correlations and 3 metrics with no correlations. 
 
-Positive correlation with >= 0.5
-- Goals: 0.92
-- Half time lead: 0.89
-- Half time goals: 0.86
-- Shots: 0.75
-- Shots on Target: 0.67
-- Corner Kicks: 0.66
+**Positive correlation with >= 0.5**
 
-No correlation with < 0.5 & > -0.5 
-- Yellow cards committed by opponent: 0.21
-- Red cards committed by opponent: 0.01
-- Fouls committed by opponent: -0.16
+| Positive       | Correlation |
+| -------------- | ----------- |
+| **Goals**      | **0.92**    |
+| Half time lead | 0.89        |
+| Half time goals| 0.86        |
+| Shots          | 0.75        |
+| Shots on Target| 0.67        |
+| Corner Kicks   | 0.66        |
 
-<CHANGE to Table>
+
+**No correlation with < 0.5 & > -0.5**
+
+| No correlation  | Correlation |
+| -------------- | ------------ |
+| Yellow cards   | 0.21         |
+| Red cards      | 0.01         |
+| Fouls          | -0.16        |
+
+
+![Pearson](img/pearson.png)
+![Goals](img/goals.png)
 
 **Goals had the highest correlations to wins with 0.92.** I was surprised that when the opponent committed a red card, it had no correlation to winning even though the opponent was short one person (due to ejection).
 
 So goals matter to winning. As a soccer fan, one of the most upsetting games to watch is a game ending in both teams scoring 0 goals. Even being a fan for 20 years, I consider these games “boring.” 
 The average number of games resulting in a “boring” 0-0 score was 7.5% over the last 10 years in 4 different leaves combined. There were 1,090 games that ended with 0-0 score out of 14,456 games in the last 10 years.  The averages among different leagues are shown below:
 
-* Germany: 6.7% 
-* Spain: 7.5% 
-* England: 7.6%
-* Italy: 8.1% 
+| Country | 0 Goal Games |
+| ------- | ------------ |
+| Germany | 6.7%         |
+| Spain   | 7.5%         |
+| England | 7.6%         |
+| Italy   | 8.1%         |
 
-<CHANGE to Table>
-
+![Zero Games](img/zerogames.png)
 ---
 
 ## Hypothesis Testing
@@ -121,9 +131,11 @@ Since I had data that resulted in 0-0 score for the last 10 years I used a binom
 
 #### Results 1
 
-The hypothesis test result shows that the P-value resulted in 0.021 and since this is below the 0.05 threshold I could reject the null hypothesis. Therefore, the average number of games with 0 goals being less than 8% with a threshold of 0.005 holds true.
+![HT1](img/HT1.png)
 
-<PHOTO of HT1> 
+**P-Value Result: 0.021**
+
+The hypothesis test result shows that the P-value resulted in 0.021 and since this is below the 0.05 threshold I could reject the null hypothesis. Therefore, the average number of games with 0 goals being less than 8% with a threshold of 0.05 holds true.
 
 
 ---
@@ -154,7 +166,7 @@ I divided the average number of games with 0 goals over 10 seasons for both leag
 
 The hypothesis test result shows that the P-value for both Welch’s T-Test and Mann-Whitney U-Test resulted in 0.092 and 0.14 respectively. Since both results are above the 0.05 threshold, we cannot reject the null hypothesis that the average number of games with 0 goals in Germany = Italy.
 
-<PHOTO of HT2> 
+![HT2](img/HT2.png)
 
 I’ve tried testing Welch's T-Test and Mann-Whitney U-Test to all other leagues against each other with the same method, but they all showed the results above the 0.05 threshold.
 
