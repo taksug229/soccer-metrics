@@ -19,7 +19,7 @@
         - [Model Choice](#model-choice-1)
         - [Results](#results-2)
 4. [Conclusion](#conclusion)
-    * [Take Away & Final Thoughts](#take-away-&-final-thoughts)
+    * [Take Away](#take-away)
     * [Future works](#future-works)
 - [Built with](#built-with)
 - [Author](#author)
@@ -175,7 +175,7 @@ I’ve tried testing Welch's T-Test and Mann-Whitney U-Test to all other leagues
 
 ## Conclusion
 
-### Take Away & Final Thoughts
+### Take Away
 
 I thought that there would be a difference in average games with 0 goals scored in Italy compared to other leagues because Italy had historically been known playing a [defensive soccer style](https://en.wikipedia.org/wiki/Catenaccio).
 
