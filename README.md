@@ -31,7 +31,7 @@
 ### Background
 Soccer is the most popular sport in the world with about [3.5 billion fans](https://sportsshow.net/top-10-most-popular-sports-in-the-world/) worldwide— more than basketball, baseball, and american football fans combined. 
 
-I’ve been a fan of soccer for about 20 years so I was interested in knowing more about the sport. I gathered stats from the last 10 years from soccer leagues in England, Spain, Germany and Italy. I chose these 4 leagues because they were the only countries that had an UEFA Champions League champion in the last 10 years. The UEFA Champions League is considered the most competitive competition in the world so I made sure I was to taking stats from the best leagues. 
+I’ve been a fan of soccer for about 20 years so I was interested in knowing more about the sport. I wanted to analyze which metric mattered to wins. I gathered stats from the last 10 years from soccer leagues in England, Spain, Germany and Italy. I chose these 4 leagues because they were the only countries that had an UEFA Champions League champion in the last 10 years. The UEFA Champions League is considered the most competitive competition in the world so I made sure I was to taking stats from the best leagues. 
 
 ![CL Winners](img/CL-winners.png)
 
@@ -120,7 +120,7 @@ My first hypothesis test was to see whether the average number of games ending i
 **Null hypothesis:** The average number of games with 0 goal = 8%.
 **Alternative hypothesis:** The average number of games with 0 goal < 8%.
 
-**P-Value = 0.05**
+**Alpha = 0.05**
 
 
 #### Model Choice 1
@@ -151,13 +151,13 @@ Since Germany’s league had the lowest average number of games with 0 goals and
 
 **Alternative hypothesis:** The average number of games with 0 goals in Germany < Italy.
 
-**P-Value = 0.05**
+**Alpha = 0.05**
 
 
 #### Model Choice 2
 
 - Welch’s T-Test
-- Mann-Whitney U-Test 
+- Mann-Whitney U-Test (Two-Sided)
 
 I divided the average number of games with 0 goals over 10 seasons for both leagues in Germany and Italy so that I could have 2 sample distributions to compare each other.  I applied the Welch’s T-Test and Mann-Whitney U-Test using these 2 sample distributions with both sample size with n=10. 
 
@@ -194,13 +194,14 @@ Also, since this data didn't provide statistics of free-kick in near goal areas,
 
 ## Built With
 
-* [Python](https://www.python.org/) - All written in Python inside Jupyter Notebook
-* [Pandas](https://pandas.pydata.org/docs/) - The Python dataframe library used 
-
+* **Software Packages:**  [Python](https://www.python.org/),  [Pandas](https://pandas.pydata.org/docs/), [Numpy](https://numpy.org/), [Matplotlib](https://matplotlib.org/), [Scipy](https://docs.scipy.org/doc/), [Seaborn](https://seaborn.pydata.org/)
+* **Hypothesis Methods:** [Pearson correlation coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient), [One-sample t-test](https://en.wikipedia.org/wiki/Student%27s_t-test), [Welch's t-test](https://en.wikipedia.org/wiki/Welch%27s_t-test), [Mann–Whitney U test](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test)
 
 ## Author
 
-* **Takeshi Sugiyama** - *Data Scientist* - [Linkedin](https://www.linkedin.com/in/takeshi-sugiyama/)
+* **Takeshi Sugiyama** - *Data Scientist*
+  * [Linkedin](https://www.linkedin.com/in/takeshi-sugiyama/)
+  * [Tableau](https://public.tableau.com/profile/takeshi.sugiyama)
 
 
 
