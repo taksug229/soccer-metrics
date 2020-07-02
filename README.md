@@ -38,7 +38,7 @@ I’ve been a fan of soccer for about 20 years so I was interested in knowing mo
 ### Data
 I used datasets that were available from a betting [site](http://www.football-data.co.uk/) in the UK.
 
-It contained a total of 40 CSV files.  There were 14466 Rose and 80 Columns of pre-process data.
+It contained a total of 40 CSV files.  There were 14466 Rows and 80 Columns of pre-process data.
 
 I filtered out; 
 1) columns that had less than 1% null values, 
